@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="BiblioOnlineBookStore.Cart"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BiblioOnlineBookStore"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <GridView x:Name="myGridView" ItemsSource="{x:Bind _carts  }" Background="White" BorderBrush="Black" BorderThickness="1" >
+            <GridView.ItemTemplate>
+                <DataTemplate x:DataType="local:BookDTO">
+                    <StackPanel Orientation="Vertical" >
+                        <!-- Define how each book should be displayed -->
+                        <TextBlock Text="{x:Bind Title}" />
+                        <TextBlock Text="{x:Bind AuthorName}" />
+                        <TextBlock Text="{x:Bind GenreName}" />
+                        <TextBlock Text="{x:Bind  Price}" />
+                        <TextBlock Text="{x:Bind  QuantityBought}" />
+                     </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+            
+        </GridView>
+        <Button x:Name="Submit" Content="Submit" Click="Submit_Click"/>
+        <Button x:Name="EditCart" Content="EditCart" Click="EditCart_Click"/>
+        <Button x:Name="GoToMain" Content="Main Menu" Click="GoToMain_Click"/>
+        <TextBlock x:Name="Message" FontSize="20" />
+    </StackPanel>
+</Page>

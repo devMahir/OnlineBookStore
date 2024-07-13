@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="BiblioOnlineBookStore.AdminPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BiblioOnlineBookStore"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>           
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Admin Page" FontSize="30" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" TextAlignment="Center" HorizontalAlignment="Center"/>
+        <RadioButton Content="Add New Book" Name="rbAddBook" FontSize="30" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"  HorizontalAlignment="Center" Checked="rbAddBook_Checked"  />
+        <RadioButton Content="Add New Author" Name="rbAddAuthor" FontSize="30" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"  VerticalAlignment="Center" HorizontalAlignment="Center" Checked="rbAddAuthor_Checked" />
+        <RadioButton Content="Main Menu" Name="rbMainMenu" FontSize="30" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"  VerticalAlignment="Center" HorizontalAlignment="Center" Checked="rbMainMenu_Checked" />
+
+    </Grid>
+</Page>

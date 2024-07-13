@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="BiblioOnlineBookStore.CustomerRegistration"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BiblioOnlineBookStore"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Customer Name" FontSize="20" Grid.Row="0" Grid.Column="0" Width="300"/>
+        <TextBox x:Name="txtName" Grid.Column="1" Grid.Row="0" FontSize="20" Width="300" />
+        <TextBlock x:Name="validName" Grid.Column="2" Grid.Row="0" FontSize="20" Width="300" />
+        <TextBlock Text="Customer Email" FontSize="20" Grid.Row="1" Grid.Column="0" Width="300"/>
+        <TextBox x:Name="txtEmail" Grid.Column="1" Grid.Row="1" FontSize="20" Width="300" />
+        <TextBlock x:Name="validEmail" Grid.Column="2" Grid.Row="1" FontSize="20" Width="300" />
+        <TextBlock Text="Customer Address" FontSize="20" Grid.Row="2" Grid.Column="0" Width="300"/>
+        <TextBox x:Name="txtAddress" Grid.Column="1" Grid.Row="2" FontSize="20" Width="300" />
+        <TextBlock x:Name="validAddress" Grid.Column="2" Grid.Row="2" FontSize="20" Width="300" />
+        <TextBlock Text="Customer Phone" FontSize="20" Grid.Row="3" Grid.Column="0" Width="300"/>
+        <TextBox x:Name="txtPhone" Grid.Column="1" Grid.Row="3" FontSize="20" Width="300" />
+        <TextBlock x:Name="validPhone" Grid.Column="3" Grid.Row="3" FontSize="20" Width="300" />
+        <TextBlock Text="Password" FontSize="20" Grid.Row="4" Grid.Column="0" Width="300"/>
+        <PasswordBox x:Name="txtPassword" Grid.Column="1" Grid.Row="4" FontSize="20" Width="300" />
+        <TextBlock x:Name="validPassword" Grid.Column="2" Grid.Row="4" FontSize="20" Width="300" />
+        <TextBlock Text="Confirm Password" FontSize="20" Grid.Row="5" Grid.Column="0" Width="300"/>
+        <PasswordBox x:Name="txtCPassword" Grid.Column="1" Grid.Row="5" FontSize="20" Width="300" />
+        <TextBlock x:Name="validCPassword" Grid.Column="2" Grid.Row="5" FontSize="20" Width="300" />
+        <Button x:Name="btnSubmit" Content="Submit" FontSize="20" Width="300" Grid.Column="0" Grid.Row="6" Click="btnSubmit_Click"/>
+        <Button x:Name="btnLogin" Content="Go To Login" FontSize="20" Width="300" Grid.Column="1" Grid.Row="6" Click="btnLogin_Click"/>
+        <TextBlock Text="" Name="message" FontSize="20" Grid.Row="7" Grid.Column="0" Width="300"/>
+    </Grid>
+</Page>
